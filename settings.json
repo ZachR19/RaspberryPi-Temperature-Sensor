@@ -3,7 +3,7 @@
 "BUCKET_NAME":"",
 "BUCKET_KEY":"",
 "ACCESS_KEY":"",
-"email_sender":"",
+"email_sender":"raudebaughzach@gmail.com",
 "email_password":"",
 "mins_between_emails":5,
 "secs_between_reads":30,
