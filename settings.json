@@ -1,0 +1,17 @@
+{
+"SENSOR_LOCATION_NAME":"",
+"BUCKET_NAME":"",
+"BUCKET_KEY":"",
+"ACCESS_KEY":"",
+"email_sender":"",
+"email_password":"",
+"mins_between_emails":5,
+"secs_between_reads":30,
+"max_temp":72.0,
+"min_temp":50.0,
+"min_humidity": 20.0,
+"max_humidity": 70.0,
+"send_temp_warnings": true,
+"send_humidity_warnings": true
+}
+

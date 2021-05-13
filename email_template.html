@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Temperature Warning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+	<table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
+		<tr>
+			<td>
+				<h1>The {ROOMNAME} Room temperature or humidity has gone outside it's normal limits.</h1>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h2>Please check on the status of the server and ensure the following parties are notified:
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<ul>{list_emails}</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h2>{ROOMNAME} temperature readings as of {date}</h2>
+				<h3>Temperature: {temp}°F</h3>
+				<p>Recommended: 68°F - 72°F</p>
+				<p>Minimum: {min_temp}°F</p>
+				<p>Maximum: {max_temp}°F</p>
+
+				</br>
+
+				<h3>Humidity: {humidity}%</h3>
+				<p>Recommended: 40% - 60%</p>
+				<p>Minimum: {min_humidity}%</p>
+				<p>Maximum: {max_humidity}%</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>You will continue receiving this email every {min_notify} minutes until the room temperature has stabilized, if you need to force the emails to stop, see the documentation location in {DOCUMENTATIONPATH}</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<p><i>This is an automated message sent from the {ROOMNAME}'s temperature sensor. If this is a false alarm, please reset this device by following the instructions in the documentation at the location mentioned above</i></p>
+			</td>
+		</tr>
+	</table>
+
+</body>
+
+</html>
